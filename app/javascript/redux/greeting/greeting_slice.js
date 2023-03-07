@@ -17,7 +17,6 @@ const greetingsSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(getGreetings.fulfilled, (state, action) => {
       const greetings = action.payload;
-      console.log(greetings)
       return greetings;
     });
   },
